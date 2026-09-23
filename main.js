@@ -33,20 +33,23 @@ console.log(`risultatomedia = ${accumulator/counter}`)
 
 
 
-let numero = prompt('inserire un numero da 1 a 3 per una bevanda')
-let esito;
-switch(true) {
-    case numero = 1 :
-        esito = 'E’ stata selezionata l’acqua'
+let numero 
+do{
+    numero = Number(prompt('inserire un numero da 1 a 3 per una bevanda'))
+
+switch(numero) {
+    case 1 :
+        console.log( 'E’ stata selezionata l’acqua')
         break;
-    case numero = 2 :
-        esito = 'E’ stata selezionata coca cola'
+    case 2 :
+        console.log( 'E’ stata selezionata coca cola')
         break;
-    case numero = 3 :
-        esito = 'E’ stata selezionata birra'
+    case 3 :
+        console.log( 'E’ stata selezionata birra')
         break;
     
 default:
-     esito = prompt('inserire un numero da 1 a 3 per una bevanda')
+     prompt('inserire un numero da 1 a 3 per una bevanda')
 
 }
+}while (scelta < 1 || scelta > 3)
